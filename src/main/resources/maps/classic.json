@@ -1,0 +1,2200 @@
+{
+  "countries": [
+      "Austria",
+      "England",
+      "France",
+      "Germany",
+      "Italy",
+      "Russia",
+      "Turkey"
+  ],
+  "provinces": [
+    {
+      "name": "North Atlantic Ocean",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Norwegian Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Barents Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Mid-Atlantic Ocean",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Irish Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "North Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Skagerrak",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "English Channel",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Helgoland Bight",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Baltic Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Gulf of Bothnia",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Western Mediterranean Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Gulf of Lyon",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Tyrrhenian Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Ionian Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Adriatic Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Aegean Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Eastern Mediterranean Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Black Sea",
+      "locations": [
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Clyde",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Liverpool",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Edinburgh",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Wales",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Yorkshire",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "London",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Norway",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Sweden",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Finland",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "St. Petersburg",
+      "locations": [
+        "LAND",
+        "NORTH_COAST",
+        "SOUTH_COAST"
+      ]
+    },
+    {
+      "name": "Livonia",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Warsaw",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Moscow",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Ukraine",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Sevastopol",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Armenia",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Syria",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Smyrna",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Ankara",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Constantinople",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Bulgaria",
+      "locations": [
+        "LAND",
+        "NORTH_COAST",
+        "SOUTH_COAST"
+      ]
+    },
+    {
+      "name": "Rumania",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Greece",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Albania",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Serbia",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Trieste",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Budapest",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Galicia",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Vienna",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Bohemia",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Tyrolia",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Venice",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Apulia",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Naples",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Rome",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Tuscany",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Piedmont",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Tunis",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "North Africa",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Spain",
+      "locations": [
+        "LAND",
+        "NORTH_COAST",
+        "SOUTH_COAST"
+      ]
+    },
+    {
+      "name": "Portugal",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Marseilles",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Gascony",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Brest",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Picardy",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Paris",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Burgundy",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Belgium",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Holland",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Ruhr",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Kiel",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Munich",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Berlin",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Silesia",
+      "locations": [
+        "LAND"
+      ]
+    },
+    {
+      "name": "Prussia",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    },
+    {
+      "name": "Denmark",
+      "locations": [
+        "LAND",
+        "THE_COAST"
+      ]
+    }
+  ],
+  "adjacencies": [
+    {
+      "from": "North Atlantic Ocean",
+      "fromLocation": "THE_COAST",
+      "to": "Norwegian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Barents Sea",
+      "fromLocation": "THE_COAST",
+      "to": "St. Petersburg",
+      "toLocation": "NORTH_COAST"
+    },
+    {
+      "from": "Barents Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Norway",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Barents Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Norwegian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Mid-Atlantic Ocean",
+      "fromLocation": "THE_COAST",
+      "to": "North Africa",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Mid-Atlantic Ocean",
+      "fromLocation": "THE_COAST",
+      "to": "Western Mediterranean Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Mid-Atlantic Ocean",
+      "fromLocation": "THE_COAST",
+      "to": "Portugal",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Mid-Atlantic Ocean",
+      "fromLocation": "THE_COAST",
+      "to": "Spain",
+      "toLocation": "NORTH_COAST"
+    },
+    {
+      "from": "Mid-Atlantic Ocean",
+      "fromLocation": "THE_COAST",
+      "to": "Spain",
+      "toLocation": "SOUTH_COAST"
+    },
+    {
+      "from": "Mid-Atlantic Ocean",
+      "fromLocation": "THE_COAST",
+      "to": "Irish Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Irish Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Wales",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Irish Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Liverpool",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Irish Sea",
+      "fromLocation": "THE_COAST",
+      "to": "North Atlantic Ocean",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Irish Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Mid-Atlantic Ocean",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "North Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Skagerrak",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "North Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Norway",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "North Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Norwegian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "North Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Yorkshire",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "English Channel",
+      "fromLocation": "THE_COAST",
+      "to": "Mid-Atlantic Ocean",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "English Channel",
+      "fromLocation": "THE_COAST",
+      "to": "Picardy",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "English Channel",
+      "fromLocation": "THE_COAST",
+      "to": "North Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "English Channel",
+      "fromLocation": "THE_COAST",
+      "to": "London",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "English Channel",
+      "fromLocation": "THE_COAST",
+      "to": "Wales",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "English Channel",
+      "fromLocation": "THE_COAST",
+      "to": "Irish Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Helgoland Bight",
+      "fromLocation": "THE_COAST",
+      "to": "Holland",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Helgoland Bight",
+      "fromLocation": "THE_COAST",
+      "to": "Kiel",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Helgoland Bight",
+      "fromLocation": "THE_COAST",
+      "to": "North Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Baltic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Kiel",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Baltic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Berlin",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Baltic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Prussia",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Baltic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Livonia",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Baltic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Gulf of Bothnia",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Baltic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Sweden",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Baltic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Denmark",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Gulf of Bothnia",
+      "fromLocation": "THE_COAST",
+      "to": "Livonia",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Gulf of Bothnia",
+      "fromLocation": "THE_COAST",
+      "to": "St. Petersburg",
+      "toLocation": "NORTH_COAST"
+    },
+    {
+      "from": "Gulf of Bothnia",
+      "fromLocation": "THE_COAST",
+      "to": "Sweden",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Gulf of Lyon",
+      "fromLocation": "THE_COAST",
+      "to": "Western Mediterranean Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Gulf of Lyon",
+      "fromLocation": "THE_COAST",
+      "to": "Tyrrhenian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Gulf of Lyon",
+      "fromLocation": "THE_COAST",
+      "to": "Tuscany",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Gulf of Lyon",
+      "fromLocation": "THE_COAST",
+      "to": "Piedmont",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Gulf of Lyon",
+      "fromLocation": "THE_COAST",
+      "to": "Marseilles",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Gulf of Lyon",
+      "fromLocation": "THE_COAST",
+      "to": "Spain",
+      "toLocation": "SOUTH_COAST"
+    },
+    {
+      "from": "Tyrrhenian Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Western Mediterranean Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Ionian Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Naples",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Ionian Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Tyrrhenian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Ionian Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Tunis",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Adriatic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Albania",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Adriatic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Trieste",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Adriatic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Venice",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Adriatic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Apulia",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Adriatic Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Ionian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Aegean Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Eastern Mediterranean Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Aegean Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Smyrna",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Aegean Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Constantinople",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Aegean Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Bulgaria",
+      "toLocation": "SOUTH_COAST"
+    },
+    {
+      "from": "Aegean Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Greece",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Aegean Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Ionian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Eastern Mediterranean Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Syria",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Eastern Mediterranean Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Smyrna",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Eastern Mediterranean Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Ionian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Black Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Constantinople",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Black Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Bulgaria",
+      "toLocation": "NORTH_COAST"
+    },
+    {
+      "from": "Black Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Rumania",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Black Sea",
+      "fromLocation": "THE_COAST",
+      "to": "Sevastopol",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Clyde",
+      "fromLocation": "THE_COAST",
+      "to": "Edinburgh",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Clyde",
+      "fromLocation": "THE_COAST",
+      "to": "Norwegian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Clyde",
+      "fromLocation": "THE_COAST",
+      "to": "North Atlantic Ocean",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Clyde",
+      "fromLocation": "THE_COAST",
+      "to": "Liverpool",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Liverpool",
+      "fromLocation": "THE_COAST",
+      "to": "North Atlantic Ocean",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Liverpool",
+      "fromLocation": "THE_COAST",
+      "to": "Wales",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Edinburgh",
+      "fromLocation": "THE_COAST",
+      "to": "Norwegian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Edinburgh",
+      "fromLocation": "THE_COAST",
+      "to": "North Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Edinburgh",
+      "fromLocation": "THE_COAST",
+      "to": "Yorkshire",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "London",
+      "fromLocation": "THE_COAST",
+      "to": "North Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "London",
+      "fromLocation": "THE_COAST",
+      "to": "Yorkshire",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "London",
+      "fromLocation": "THE_COAST",
+      "to": "Wales",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Norway",
+      "fromLocation": "THE_COAST",
+      "to": "Norwegian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Norway",
+      "fromLocation": "THE_COAST",
+      "to": "Skagerrak",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Norway",
+      "fromLocation": "THE_COAST",
+      "to": "Sweden",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Norway",
+      "fromLocation": "THE_COAST",
+      "to": "St. Petersburg",
+      "toLocation": "NORTH_COAST"
+    },
+    {
+      "from": "Finland",
+      "fromLocation": "THE_COAST",
+      "to": "Sweden",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Finland",
+      "fromLocation": "THE_COAST",
+      "to": "Gulf of Bothnia",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Finland",
+      "fromLocation": "THE_COAST",
+      "to": "St. Petersburg",
+      "toLocation": "SOUTH_COAST"
+    },
+    {
+      "from": "Livonia",
+      "fromLocation": "THE_COAST",
+      "to": "St. Petersburg",
+      "toLocation": "SOUTH_COAST"
+    },
+    {
+      "from": "Livonia",
+      "fromLocation": "THE_COAST",
+      "to": "Prussia",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Armenia",
+      "fromLocation": "THE_COAST",
+      "to": "Black Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Armenia",
+      "fromLocation": "THE_COAST",
+      "to": "Sevastopol",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Smyrna",
+      "fromLocation": "THE_COAST",
+      "to": "Syria",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Ankara",
+      "fromLocation": "THE_COAST",
+      "to": "Armenia",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Ankara",
+      "fromLocation": "THE_COAST",
+      "to": "Black Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Ankara",
+      "fromLocation": "THE_COAST",
+      "to": "Constantinople",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Bulgaria",
+      "fromLocation": "NORTH_COAST",
+      "to": "Rumania",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Bulgaria",
+      "fromLocation": "NORTH_COAST",
+      "to": "Constantinople",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Bulgaria",
+      "fromLocation": "SOUTH_COAST",
+      "to": "Constantinople",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Bulgaria",
+      "fromLocation": "SOUTH_COAST",
+      "to": "Greece",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Rumania",
+      "fromLocation": "THE_COAST",
+      "to": "Sevastopol",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Greece",
+      "fromLocation": "THE_COAST",
+      "to": "Ionian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Trieste",
+      "fromLocation": "THE_COAST",
+      "to": "Venice",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Apulia",
+      "fromLocation": "THE_COAST",
+      "to": "Venice",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Apulia",
+      "fromLocation": "THE_COAST",
+      "to": "Ionian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Apulia",
+      "fromLocation": "THE_COAST",
+      "to": "Naples",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Naples",
+      "fromLocation": "THE_COAST",
+      "to": "Tyrrhenian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Naples",
+      "fromLocation": "THE_COAST",
+      "to": "Rome",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Rome",
+      "fromLocation": "THE_COAST",
+      "to": "Tyrrhenian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Rome",
+      "fromLocation": "THE_COAST",
+      "to": "Tuscany",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Piedmont",
+      "fromLocation": "THE_COAST",
+      "to": "Tuscany",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Tunis",
+      "fromLocation": "THE_COAST",
+      "to": "Tyrrhenian Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Tunis",
+      "fromLocation": "THE_COAST",
+      "to": "Western Mediterranean Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "North Africa",
+      "fromLocation": "THE_COAST",
+      "to": "Tunis",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "North Africa",
+      "fromLocation": "THE_COAST",
+      "to": "Western Mediterranean Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Spain",
+      "fromLocation": "SOUTH_COAST",
+      "to": "Western Mediterranean Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Portugal",
+      "fromLocation": "THE_COAST",
+      "to": "Spain",
+      "toLocation": "NORTH_COAST"
+    },
+    {
+      "from": "Portugal",
+      "fromLocation": "THE_COAST",
+      "to": "Spain",
+      "toLocation": "SOUTH_COAST"
+    },
+    {
+      "from": "Marseilles",
+      "fromLocation": "THE_COAST",
+      "to": "Spain",
+      "toLocation": "SOUTH_COAST"
+    },
+    {
+      "from": "Marseilles",
+      "fromLocation": "THE_COAST",
+      "to": "Piedmont",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Gascony",
+      "fromLocation": "THE_COAST",
+      "to": "Spain",
+      "toLocation": "NORTH_COAST"
+    },
+    {
+      "from": "Gascony",
+      "fromLocation": "THE_COAST",
+      "to": "Mid-Atlantic Ocean",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Brest",
+      "fromLocation": "THE_COAST",
+      "to": "Picardy",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Brest",
+      "fromLocation": "THE_COAST",
+      "to": "English Channel",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Brest",
+      "fromLocation": "THE_COAST",
+      "to": "Mid-Atlantic Ocean",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Brest",
+      "fromLocation": "THE_COAST",
+      "to": "Gascony",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Belgium",
+      "fromLocation": "THE_COAST",
+      "to": "Holland",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Belgium",
+      "fromLocation": "THE_COAST",
+      "to": "North Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Belgium",
+      "fromLocation": "THE_COAST",
+      "to": "English Channel",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Belgium",
+      "fromLocation": "THE_COAST",
+      "to": "Picardy",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Holland",
+      "fromLocation": "THE_COAST",
+      "to": "North Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Berlin",
+      "fromLocation": "THE_COAST",
+      "to": "Prussia",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Berlin",
+      "fromLocation": "THE_COAST",
+      "to": "Kiel",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Denmark",
+      "fromLocation": "THE_COAST",
+      "to": "Kiel",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Denmark",
+      "fromLocation": "THE_COAST",
+      "to": "Sweden",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Denmark",
+      "fromLocation": "THE_COAST",
+      "to": "Skagerrak",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Denmark",
+      "fromLocation": "THE_COAST",
+      "to": "North Sea",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Denmark",
+      "fromLocation": "THE_COAST",
+      "to": "Helgoland Bight",
+      "toLocation": "THE_COAST"
+    },
+    {
+      "from": "Clyde",
+      "fromLocation": "LAND",
+      "to": "Edinburgh",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Clyde",
+      "fromLocation": "LAND",
+      "to": "Liverpool",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Liverpool",
+      "fromLocation": "LAND",
+      "to": "Yorkshire",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Liverpool",
+      "fromLocation": "LAND",
+      "to": "Wales",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Edinburgh",
+      "fromLocation": "LAND",
+      "to": "Liverpool",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Edinburgh",
+      "fromLocation": "LAND",
+      "to": "Yorkshire",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Wales",
+      "fromLocation": "LAND",
+      "to": "Yorkshire",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "London",
+      "fromLocation": "LAND",
+      "to": "Yorkshire",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "London",
+      "fromLocation": "LAND",
+      "to": "Wales",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Norway",
+      "fromLocation": "LAND",
+      "to": "St. Petersburg",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Norway",
+      "fromLocation": "LAND",
+      "to": "Sweden",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Finland",
+      "fromLocation": "LAND",
+      "to": "St. Petersburg",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Finland",
+      "fromLocation": "LAND",
+      "to": "Norway",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Finland",
+      "fromLocation": "LAND",
+      "to": "Sweden",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Livonia",
+      "fromLocation": "LAND",
+      "to": "Prussia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Livonia",
+      "fromLocation": "LAND",
+      "to": "Warsaw",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Livonia",
+      "fromLocation": "LAND",
+      "to": "Moscow",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Livonia",
+      "fromLocation": "LAND",
+      "to": "St. Petersburg",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Moscow",
+      "fromLocation": "LAND",
+      "to": "Warsaw",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Moscow",
+      "fromLocation": "LAND",
+      "to": "Ukraine",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Moscow",
+      "fromLocation": "LAND",
+      "to": "Sevastopol",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Moscow",
+      "fromLocation": "LAND",
+      "to": "St. Petersburg",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Ukraine",
+      "fromLocation": "LAND",
+      "to": "Warsaw",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Sevastopol",
+      "fromLocation": "LAND",
+      "to": "Ukraine",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Armenia",
+      "fromLocation": "LAND",
+      "to": "Syria",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Armenia",
+      "fromLocation": "LAND",
+      "to": "Smyrna",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Armenia",
+      "fromLocation": "LAND",
+      "to": "Sevastopol",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Smyrna",
+      "fromLocation": "LAND",
+      "to": "Syria",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Ankara",
+      "fromLocation": "LAND",
+      "to": "Armenia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Ankara",
+      "fromLocation": "LAND",
+      "to": "Smyrna",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Ankara",
+      "fromLocation": "LAND",
+      "to": "Constantinople",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Bulgaria",
+      "fromLocation": "LAND",
+      "to": "Constantinople",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Bulgaria",
+      "fromLocation": "LAND",
+      "to": "Rumania",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Bulgaria",
+      "fromLocation": "LAND",
+      "to": "Serbia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Bulgaria",
+      "fromLocation": "LAND",
+      "to": "Greece",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Rumania",
+      "fromLocation": "LAND",
+      "to": "Serbia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Rumania",
+      "fromLocation": "LAND",
+      "to": "Ukraine",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Rumania",
+      "fromLocation": "LAND",
+      "to": "Sevastopol",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Greece",
+      "fromLocation": "LAND",
+      "to": "Serbia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Albania",
+      "fromLocation": "LAND",
+      "to": "Greece",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Albania",
+      "fromLocation": "LAND",
+      "to": "Serbia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Albania",
+      "fromLocation": "LAND",
+      "to": "Trieste",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Serbia",
+      "fromLocation": "LAND",
+      "to": "Trieste",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Trieste",
+      "fromLocation": "LAND",
+      "to": "Tyrolia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Budapest",
+      "fromLocation": "LAND",
+      "to": "Galicia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Budapest",
+      "fromLocation": "LAND",
+      "to": "Vienna",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Budapest",
+      "fromLocation": "LAND",
+      "to": "Trieste",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Budapest",
+      "fromLocation": "LAND",
+      "to": "Serbia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Budapest",
+      "fromLocation": "LAND",
+      "to": "Rumania",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Galicia",
+      "fromLocation": "LAND",
+      "to": "Rumania",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Galicia",
+      "fromLocation": "LAND",
+      "to": "Ukraine",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Galicia",
+      "fromLocation": "LAND",
+      "to": "Warsaw",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Galicia",
+      "fromLocation": "LAND",
+      "to": "Silesia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Galicia",
+      "fromLocation": "LAND",
+      "to": "Vienna",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Bohemia",
+      "fromLocation": "LAND",
+      "to": "Galicia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Bohemia",
+      "fromLocation": "LAND",
+      "to": "Silesia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Bohemia",
+      "fromLocation": "LAND",
+      "to": "Munich",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Bohemia",
+      "fromLocation": "LAND",
+      "to": "Tyrolia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Bohemia",
+      "fromLocation": "LAND",
+      "to": "Vienna",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Tyrolia",
+      "fromLocation": "LAND",
+      "to": "Venice",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Tyrolia",
+      "fromLocation": "LAND",
+      "to": "Vienna",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Apulia",
+      "fromLocation": "LAND",
+      "to": "Venice",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Apulia",
+      "fromLocation": "LAND",
+      "to": "Rome",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Apulia",
+      "fromLocation": "LAND",
+      "to": "Naples",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Rome",
+      "fromLocation": "LAND",
+      "to": "Venice",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Rome",
+      "fromLocation": "LAND",
+      "to": "Tuscany",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Piedmont",
+      "fromLocation": "LAND",
+      "to": "Tyrolia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Piedmont",
+      "fromLocation": "LAND",
+      "to": "Venice",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Piedmont",
+      "fromLocation": "LAND",
+      "to": "Tuscany",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "North Africa",
+      "fromLocation": "LAND",
+      "to": "Tunis",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Portugal",
+      "fromLocation": "LAND",
+      "to": "Spain",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Marseilles",
+      "fromLocation": "LAND",
+      "to": "Piedmont",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Marseilles",
+      "fromLocation": "LAND",
+      "to": "Spain",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Gascony",
+      "fromLocation": "LAND",
+      "to": "Spain",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Gascony",
+      "fromLocation": "LAND",
+      "to": "Marseilles",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Gascony",
+      "fromLocation": "LAND",
+      "to": "Paris",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Brest",
+      "fromLocation": "LAND",
+      "to": "Picardy",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Brest",
+      "fromLocation": "LAND",
+      "to": "Paris",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Brest",
+      "fromLocation": "LAND",
+      "to": "Gascony",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Paris",
+      "fromLocation": "LAND",
+      "to": "Picardy",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Burgundy",
+      "fromLocation": "LAND",
+      "to": "Ruhr",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Burgundy",
+      "fromLocation": "LAND",
+      "to": "Munich",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Burgundy",
+      "fromLocation": "LAND",
+      "to": "Marseilles",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Burgundy",
+      "fromLocation": "LAND",
+      "to": "Gascony",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Burgundy",
+      "fromLocation": "LAND",
+      "to": "Paris",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Burgundy",
+      "fromLocation": "LAND",
+      "to": "Picardy",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Belgium",
+      "fromLocation": "LAND",
+      "to": "Holland",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Belgium",
+      "fromLocation": "LAND",
+      "to": "Ruhr",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Belgium",
+      "fromLocation": "LAND",
+      "to": "Burgundy",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Belgium",
+      "fromLocation": "LAND",
+      "to": "Picardy",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Holland",
+      "fromLocation": "LAND",
+      "to": "Kiel",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Holland",
+      "fromLocation": "LAND",
+      "to": "Ruhr",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Kiel",
+      "fromLocation": "LAND",
+      "to": "Munich",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Kiel",
+      "fromLocation": "LAND",
+      "to": "Ruhr",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Munich",
+      "fromLocation": "LAND",
+      "to": "Ruhr",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Munich",
+      "fromLocation": "LAND",
+      "to": "Tyrolia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Munich",
+      "fromLocation": "LAND",
+      "to": "Silesia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Berlin",
+      "fromLocation": "LAND",
+      "to": "Prussia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Berlin",
+      "fromLocation": "LAND",
+      "to": "Silesia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Berlin",
+      "fromLocation": "LAND",
+      "to": "Munich",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Berlin",
+      "fromLocation": "LAND",
+      "to": "Kiel",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Silesia",
+      "fromLocation": "LAND",
+      "to": "Warsaw",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Prussia",
+      "fromLocation": "LAND",
+      "to": "Silesia",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Prussia",
+      "fromLocation": "LAND",
+      "to": "Warsaw",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Denmark",
+      "fromLocation": "LAND",
+      "to": "Kiel",
+      "toLocation": "LAND"
+    },
+    {
+      "from": "Denmark",
+      "fromLocation": "LAND",
+      "to": "Sweden",
+      "toLocation": "LAND"
+    }
+  ],
+  "units": [
+    {
+      "owner": "Austria",
+      "province": "Vienna",
+      "location": "LAND"
+    },
+    {
+      "owner": "Austria",
+      "province": "Budapest",
+      "location": "LAND"
+    },
+    {
+      "owner": "Austria",
+      "province": "Trieste",
+      "location": "THE_COAST"
+    },
+    {
+      "owner": "England",
+      "province": "London",
+      "location": "THE_COAST"
+    },
+    {
+      "owner": "England",
+      "province": "Edinburgh",
+      "location": "THE_COAST"
+    },
+    {
+      "owner": "England",
+      "province": "Liverpool",
+      "location": "LAND"
+    },
+    {
+      "owner": "France",
+      "province": "Paris",
+      "location": "LAND"
+    },
+    {
+      "owner": "France",
+      "province": "Marseilles",
+      "location": "LAND"
+    },
+    {
+      "owner": "France",
+      "province": "Brest",
+      "location": "THE_COAST"
+    },
+    {
+      "owner": "Germany",
+      "province": "Berlin",
+      "location": "LAND"
+    },
+    {
+      "owner": "Germany",
+      "province": "Munich",
+      "location": "LAND"
+    },
+    {
+      "owner": "Germany",
+      "province": "Kiel",
+      "location": "THE_COAST"
+    },
+    {
+      "owner": "Italy",
+      "province": "Rome",
+      "location": "LAND"
+    },
+    {
+      "owner": "Italy",
+      "province": "Venice",
+      "location": "LAND"
+    },
+    {
+      "owner": "Italy",
+      "province": "Naples",
+      "location": "THE_COAST"
+    },
+    {
+      "owner": "Russia",
+      "province": "Moscow",
+      "location": "LAND"
+    },
+    {
+      "owner": "Russia",
+      "province": "St. Petersburg",
+      "location": "SOUTH_COAST"
+    },
+    {
+      "owner": "Russia",
+      "province": "Sevastopol",
+      "location": "THE_COAST"
+    },
+    {
+      "owner": "Russia",
+      "province": "Warsaw",
+      "location": "LAND"
+    },
+    {
+      "owner": "Turkey",
+      "province": "Ankara",
+      "location": "THE_COAST"
+    },
+    {
+      "owner": "Turkey",
+      "province": "Constantinople",
+      "location": "LAND"
+    },
+    {
+      "owner": "Turkey",
+      "province": "Smyrna",
+      "location": "LAND"
+    }
+  ],
+  "supplyCenters": [
+    {
+      "owner": "England",
+      "province": "Liverpool"
+    },
+    {
+      "owner": "England",
+      "province": "Edinburgh"
+    },
+    {
+      "owner": "England",
+      "province": "London"
+    },
+    {
+      "owner": "France",
+      "province": "Brest"
+    },
+    {
+      "owner": "France",
+      "province": "Paris"
+    },
+    {
+      "owner": "France",
+      "province": "Marseilles"
+    },
+    {
+      "owner": "Germany",
+      "province": "Kiel"
+    },
+    {
+      "owner": "Germany",
+      "province": "Munich"
+    },
+    {
+      "owner": "Germany",
+      "province": "Berlin"
+    },
+    {
+      "owner": "Austria",
+      "province": "Vienna"
+    },
+    {
+      "owner": "Austria",
+      "province": "Budapest"
+    },
+    {
+      "owner": "Austria",
+      "province": "Trieste"
+    },
+    {
+      "owner": "Italy",
+      "province": "Venice"
+    },
+    {
+      "owner": "Italy",
+      "province": "Rome"
+    },
+    {
+      "owner": "Italy",
+      "province": "Naples"
+    },
+    {
+      "owner": "Turkey",
+      "province": "Constantinople"
+    },
+    {
+      "owner": "Turkey",
+      "province": "Smyrna"
+    },
+    {
+      "owner": "Turkey",
+      "province": "Ankara"
+    },
+    {
+      "owner": "Russia",
+      "province": "St. Petersburg"
+    },
+    {
+      "owner": "Russia",
+      "province": "Warsaw"
+    },
+    {
+      "owner": "Russia",
+      "province": "Moscow"
+    },
+    {
+      "owner": "Russia",
+      "province": "Sevastopol"
+    },
+    {
+      "owner": null,
+      "province": "Norway"
+    },
+    {
+      "owner": null,
+      "province": "Sweden"
+    },
+    {
+      "owner": null,
+      "province": "Denmark"
+    },
+    {
+      "owner": null,
+      "province": "Holland"
+    },
+    {
+      "owner": null,
+      "province": "Belgium"
+    },
+    {
+      "owner": null,
+      "province": "Spain"
+    },
+    {
+      "owner": null,
+      "province": "Portugal"
+    },
+    {
+      "owner": null,
+      "province": "Tunis"
+    },
+    {
+      "owner": null,
+      "province": "Rumania"
+    },
+    {
+      "owner": null,
+      "province": "Serbia"
+    },
+    {
+      "owner": null,
+      "province": "Greece"
+    },
+    {
+      "owner": null,
+      "province": "Bulgaria"
+    }
+  ]
+}
