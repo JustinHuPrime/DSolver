@@ -13,7 +13,7 @@ public final class Turn {
         this.phase = phase;
     }
 
-    public Turn next() {
+    public @NotNull Turn next() {
         if (this.phase == Phase.WINTER_BUILD) {
             return new Turn(this.turn + 1, Phase.SPRING_MOVE);
         } else {

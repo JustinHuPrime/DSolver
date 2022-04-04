@@ -18,22 +18,25 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.stream.Collectors;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class Game {
 
-    public final List<Country> countries;
-    public final List<Province> board;
+    @NotNull
+    public final List<@NotNull Country> countries;
+    @NotNull
+    public final List<@NotNull Province> board;
+    @NotNull
     public Turn turn;
 
-    private Game(List<Country> countries, List<Province> provinces) {
+    private Game(@NotNull List<@NotNull Country> countries, @NotNull List<@NotNull Province> provinces) {
         this.countries = countries;
         this.board = provinces;
-        turn = new Turn(1, Phase.SPRING_MOVE);
+        this.turn = new Turn(1, Phase.SPRING_MOVE);
     }
 
-    public static Game fromMap(String name) throws NoSuchMapException, BadMapException {
+    public static Game fromMap(@NotNull String name) throws NoSuchMapException, BadMapException {
         InputStream mapFile = Game.class.getResourceAsStream("/maps/" + name + ".json");
         if (mapFile == null) {
             throw new NoSuchMapException("couldn't open map " + name);
@@ -51,7 +54,6 @@ public class Game {
             List<Province> provinces = parsed.provinces.stream().map(jsonProvince -> {
                 Province p = new Province(
                       jsonProvince.name,
-                      jsonProvince.abbreviation,
                       new HashMap<>(),
                       parsed.units.stream().filter(unit -> unit.province.equals(jsonProvince.name)).findFirst().map(unit -> {
                           Optional<Country> owner = countries.stream().filter(c -> c.name.equals(unit.owner)).findFirst();
@@ -131,7 +133,6 @@ public class Game {
     private static class JsonProvince {
 
         public String name;
-        public String abbreviation;
         public List<Location> locations;
     }
 

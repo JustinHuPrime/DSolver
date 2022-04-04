@@ -1,14 +1,15 @@
-package ca.zootron.model.map;
+package ca.zootron.model.order;
 
+import ca.zootron.model.map.Province;
 import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
-public class Unit {
+public abstract class Order {
     @NotNull
-    public final Country owner;
+    public Province who;
 
-    public Unit(@NotNull Country owner) {
-        this.owner = owner;
+    public Order(@NotNull Province who) {
+        this.who = who;
     }
 
     @Override
@@ -19,12 +20,12 @@ public class Unit {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Unit unit = (Unit) o;
-        return owner.equals(unit.owner);
+        Order order = (Order) o;
+        return who.equals(order.who);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(owner);
+        return Objects.hash(who);
     }
 }

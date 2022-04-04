@@ -3,23 +3,42 @@ package ca.zootron.model.map;
 import ca.zootron.util.Pair;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class Province {
+    @NotNull
     public final String name;
-    public final String abbreviaton;
-    public final Map<Location, List<Pair<Province, Location>>> adjacencies;
+    @NotNull
+    public final Map<@NotNull Location, @NotNull List<@NotNull Pair<@NotNull Province, @NotNull Location>>> adjacencies;
     @Nullable
-    public Pair<Unit, Location> unit;
+    public Pair<@NotNull Unit, @NotNull Location> unit;
     @Nullable
     public final SupplyCenter supplyCenter;
 
-    public Province(String name, String abbreviaton, Map<Location, List<Pair<Province, Location>>> adjacencies, @Nullable Pair<Unit, Location> unit, @Nullable SupplyCenter supplyCenter) {
+    public Province(@NotNull String name, @NotNull Map<@NotNull Location, List<@NotNull Pair<@NotNull Province, @NotNull Location>>> adjacencies, @Nullable Pair<@NotNull Unit, @NotNull Location> unit, @Nullable SupplyCenter supplyCenter) {
         this.name = name;
-        this.abbreviaton = abbreviaton;
         this.adjacencies = adjacencies;
         this.unit = unit;
         this.supplyCenter = supplyCenter;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Province province = (Province) o;
+        return name.equals(province.name) && adjacencies.equals(province.adjacencies) && Objects.equals(unit, province.unit) && Objects.equals(supplyCenter, province.supplyCenter);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
     }
 
     public static class SupplyCenter {

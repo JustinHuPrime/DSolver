@@ -3,15 +3,17 @@ package ca.zootron.model.order;
 import ca.zootron.model.map.Province;
 import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
-public class SupportOrder extends Order {
-    @Nullable
-    public Order order;
+public class ConvoyOrder extends Order {
+    @NotNull
+    public Province from;
+    @NotNull
+    public Province to;
 
-    public SupportOrder(@NotNull Province who, @Nullable Order order) {
+    public ConvoyOrder(@NotNull Province who, @NotNull Province from, @NotNull Province to) {
         super(who);
-        this.order = order;
+        this.from = from;
+        this.to = to;
     }
 
     @Override
@@ -25,12 +27,12 @@ public class SupportOrder extends Order {
         if (!super.equals(o)) {
             return false;
         }
-        SupportOrder that = (SupportOrder) o;
-        return Objects.equals(order, that.order);
+        ConvoyOrder that = (ConvoyOrder) o;
+        return from.equals(that.from) && to.equals(that.to);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), order);
+        return Objects.hash(super.hashCode(), from, to);
     }
 }
