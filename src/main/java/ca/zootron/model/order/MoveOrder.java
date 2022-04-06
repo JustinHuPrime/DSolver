@@ -5,7 +5,7 @@ import ca.zootron.model.map.Province.Location;
 import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
-public final class MoveOrder extends Order {
+public final class MoveOrder extends SupportableOrder {
     @NotNull
     public Province destinationProvince;
     @NotNull
@@ -35,5 +35,14 @@ public final class MoveOrder extends Order {
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), destinationProvince, destinationLocation);
+    }
+
+    @Override
+    public String toString() {
+        if (destinationLocation == Location.NORTH_COAST || destinationLocation == Location.SOUTH_COAST) {
+            return who + " - " + destinationProvince + " (" + destinationLocation + ")";
+        } else {
+            return who + " - " + destinationProvince;
+        }
     }
 }

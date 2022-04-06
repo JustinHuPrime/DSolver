@@ -1,10 +1,12 @@
 package ca.zootron.model.order;
 
+import ca.zootron.model.map.Country;
 import ca.zootron.model.map.Province;
 import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
-public final class ConvoyOrder extends Order {
+public final class ConvoyOrder extends SupportableOrder {
+
     @NotNull
     public Province from;
     @NotNull
@@ -34,5 +36,10 @@ public final class ConvoyOrder extends Order {
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), from, to);
+    }
+
+    @Override
+    public String toString() {
+        return who + " convoys " + from + " - " + to;
     }
 }

@@ -1,5 +1,6 @@
 package ca.zootron.model.map;
 
+import ca.zootron.model.map.Province.Location;
 import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
@@ -30,5 +31,10 @@ public final class Unit {
     @Override
     public int hashCode() {
         return Objects.hash(owner);
+    }
+
+    @Override
+    public String toString() {
+        return (location == Location.LAND ? "Army" : "Fleet") + " owned by " + owner;
     }
 }

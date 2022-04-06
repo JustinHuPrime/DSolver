@@ -46,6 +46,8 @@ class MapTest {
             game.countries.forEach(country -> assertEquals(game.board.stream().filter(province -> province.unit != null && province.unit.owner.equals(country)).count(), game.board.stream().filter(province -> province.supplyCenter != null && province.supplyCenter.controller != null && province.supplyCenter.controller.equals(country)).count()));
 
             assertEquals(new Turn(1, Phase.SPRING_MOVE), game.turn);
+
+            assertTrue(game.onlyHomeSCBuilds);
         } catch (NoSuchMapException | BadMapException e) {
             fail("No exception expected");
         }
@@ -72,6 +74,8 @@ class MapTest {
             game.countries.forEach(country -> assertEquals(game.board.stream().filter(province -> province.unit != null && province.unit.owner.equals(country)).count(), game.board.stream().filter(province -> province.supplyCenter != null && province.supplyCenter.controller != null && province.supplyCenter.controller.equals(country)).count()));
 
             assertEquals(new Turn(1, Phase.SPRING_MOVE), game.turn);
+
+            assertFalse(game.onlyHomeSCBuilds);
         } catch (NoSuchMapException | BadMapException e) {
             fail("No exception expected");
         }

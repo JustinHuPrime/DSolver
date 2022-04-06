@@ -5,11 +5,11 @@ import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public final class SupportOrder extends Order {
+public final class SupportOrder extends SupportableOrder {
     @Nullable
-    public Order order;
+    public SupportableOrder order;
 
-    public SupportOrder(@NotNull Province who, @Nullable Order order) {
+    public SupportOrder(@NotNull Province who, @Nullable SupportableOrder order) {
         super(who);
         this.order = order;
     }
@@ -32,5 +32,15 @@ public final class SupportOrder extends Order {
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), order);
+    }
+
+    @Override
+    public String toString() {
+        if (order instanceof MoveOrder moveOrder) {
+            return who + " supports " + moveOrder.who + " - " + moveOrder.destinationProvince;
+        } else {
+            assert order != null;
+            return who + " supports " + order.who;
+        }
     }
 }

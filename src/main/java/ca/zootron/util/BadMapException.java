@@ -1,6 +1,6 @@
 package ca.zootron.util;
 
-public class BadMapException extends Exception {
+public class BadMapException extends RuntimeException {
 
     public BadMapException(String message) {
         super(message);

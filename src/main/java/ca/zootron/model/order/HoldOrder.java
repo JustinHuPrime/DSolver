@@ -3,7 +3,7 @@ package ca.zootron.model.order;
 import ca.zootron.model.map.Province;
 import org.jetbrains.annotations.NotNull;
 
-public final class HoldOrder extends Order {
+public final class HoldOrder extends SupportableOrder {
 
     public HoldOrder(@NotNull Province who) {
         super(who);
@@ -17,5 +17,10 @@ public final class HoldOrder extends Order {
     @Override
     public int hashCode() {
         return super.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return who + " holds";
     }
 }

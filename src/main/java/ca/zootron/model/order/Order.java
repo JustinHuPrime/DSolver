@@ -1,10 +1,12 @@
 package ca.zootron.model.order;
 
+import ca.zootron.model.map.Country;
 import ca.zootron.model.map.Province;
 import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
 public abstract class Order {
+
     @NotNull
     public Province who;
     @NotNull
@@ -13,6 +15,10 @@ public abstract class Order {
     public Order(@NotNull Province who) {
         this.who = who;
         this.state = OrderState.ISSUED;
+    }
+
+    public Country getIssuer() {
+        return who.unit != null ? who.unit.owner : null;
     }
 
     @Override
@@ -31,6 +37,9 @@ public abstract class Order {
     public int hashCode() {
         return Objects.hash(who);
     }
+
+    @Override
+    public abstract String toString();
 
     public enum OrderState {
         ISSUED,

@@ -1,6 +1,6 @@
 package ca.zootron.util;
 
-public class NoSuchMapException extends Exception {
+public class NoSuchMapException extends RuntimeException {
 
     public NoSuchMapException(String message) {
         super(message);

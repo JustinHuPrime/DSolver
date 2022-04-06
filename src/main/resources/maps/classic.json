@@ -2196,5 +2196,6 @@
       "owner": null,
       "province": "Bulgaria"
     }
-  ]
+  ],
+  "onlyHomeSCBuilds": true
 }

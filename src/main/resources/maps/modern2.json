@@ -4275,5 +4275,6 @@
       "owner": "Poland",
       "province": "Warsaw"
     }
-  ]
+  ],
+  "onlyHomeSCBuilds": false
 }

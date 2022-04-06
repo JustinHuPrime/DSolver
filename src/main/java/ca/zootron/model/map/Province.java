@@ -43,20 +43,46 @@ public final class Province {
     public static class SupplyCenter {
         @Nullable
         public Country controller;
+        @Nullable
+        public final Country originalController;
 
         public SupplyCenter(@Nullable Country controller) {
-            this.controller = controller;
+            this.controller = this.originalController = controller;
         }
+    }
+
+    @Override
+    public String toString() {
+        return name;
     }
 
     public enum Location {
         LAND,
         THE_COAST,
         NORTH_COAST,
-        SOUTH_COAST
+        SOUTH_COAST;
+
+        @Override
+        public String toString() {
+            switch (this) {
+                case LAND -> {
+                    return "land";
+                }
+                case THE_COAST -> {
+                    return "the water";
+                }
+                case NORTH_COAST -> {
+                    return "north coast";
+                }
+                case SOUTH_COAST -> {
+                    return "south coast";
+                }
+            }
+
+            throw new AssertionError("invalid Location enum");
+        }
     }
 
     public static record ProvinceLocation(@NotNull Province province, @NotNull Location location) {
-
     }
 }

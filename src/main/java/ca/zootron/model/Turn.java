@@ -38,11 +38,39 @@ public final class Turn {
         return Objects.hash(turn, phase);
     }
 
+    @Override
+    public String toString() {
+        return "turn " + turn + " " + phase;
+    }
+
     public enum Phase {
         SPRING_MOVE,
         SPRING_RETREAT,
         FALL_MOVE,
         FALL_RETREAT,
-        WINTER_BUILD
+        WINTER_BUILD;
+
+        @Override
+        public String toString() {
+            switch (this) {
+                case SPRING_MOVE -> {
+                    return "spring move phase";
+                }
+                case SPRING_RETREAT -> {
+                    return "spring retreat phase";
+                }
+                case FALL_MOVE -> {
+                    return "fall move phase";
+                }
+                case FALL_RETREAT -> {
+                    return "fall retreat phase";
+                }
+                case WINTER_BUILD -> {
+                    return "winter build phase";
+                }
+            }
+
+            throw new AssertionError("invalid Phase enum");
+        }
     }
 }
