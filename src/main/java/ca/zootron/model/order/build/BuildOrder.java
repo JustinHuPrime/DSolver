@@ -1,4 +1,4 @@
-package ca.zootron.model.order;
+package ca.zootron.model.order.build;
 
 import ca.zootron.model.map.Country;
 import ca.zootron.model.map.Province;

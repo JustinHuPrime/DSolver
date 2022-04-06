@@ -1,4 +1,4 @@
-package ca.zootron.model.order;
+package ca.zootron.model.order.move;
 
 import ca.zootron.model.map.Province;
 import ca.zootron.util.IllegalOrderException;

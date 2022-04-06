@@ -1,6 +1,7 @@
-package ca.zootron.model.order;
+package ca.zootron.model.order.build;
 
 import ca.zootron.model.map.Province;
+import ca.zootron.model.order.Order;
 import org.jetbrains.annotations.NotNull;
 
 public abstract class BuildPhaseOrder extends Order {

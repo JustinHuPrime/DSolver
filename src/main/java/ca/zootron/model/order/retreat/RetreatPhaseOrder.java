@@ -1,7 +1,8 @@
-package ca.zootron.model.order;
+package ca.zootron.model.order.retreat;
 
 import ca.zootron.model.map.Country;
 import ca.zootron.model.map.Province;
+import ca.zootron.model.order.Order;
 import ca.zootron.util.IllegalOrderException;
 import org.jetbrains.annotations.NotNull;
 

@@ -1,4 +1,4 @@
-package ca.zootron.model.order;
+package ca.zootron.model.order.retreat;
 
 import ca.zootron.model.map.Province;
 import org.jetbrains.annotations.NotNull;
