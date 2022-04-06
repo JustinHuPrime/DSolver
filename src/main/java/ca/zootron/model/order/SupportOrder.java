@@ -4,12 +4,12 @@ import ca.zootron.model.map.Province;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public final class SupportOrder extends SupportableOrder {
+public final class SupportOrder extends MovePhaseOrder {
 
     @Nullable
-    public final SupportableOrder order;
+    public final MovePhaseOrder order;
 
-    public SupportOrder(@NotNull Province who, @Nullable SupportableOrder order) {
+    public SupportOrder(@NotNull Province who, @Nullable MovePhaseOrder order) {
         super(who);
         this.order = order;
     }

@@ -3,7 +3,7 @@ package ca.zootron.model.order;
 import ca.zootron.model.map.Province;
 import org.jetbrains.annotations.NotNull;
 
-public final class ConvoyOrder extends SupportableOrder {
+public final class ConvoyOrder extends MovePhaseOrder {
 
     @NotNull
     public final Province from;

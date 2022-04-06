@@ -5,7 +5,7 @@ import ca.zootron.model.map.Province;
 import ca.zootron.model.map.Province.Location;
 import org.jetbrains.annotations.NotNull;
 
-public final class BuildOrder extends Order {
+public final class BuildOrder extends BuildPhaseOrder {
 
     @NotNull
     public final Location where;
@@ -16,7 +16,7 @@ public final class BuildOrder extends Order {
     }
 
     @Override
-    public Country getIssuer(boolean retreating) {
+    public Country getIssuer() {
         return who.supplyCenter != null ? who.supplyCenter.controller : null;
     }
 

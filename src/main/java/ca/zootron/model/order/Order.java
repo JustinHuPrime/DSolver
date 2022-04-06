@@ -17,12 +17,8 @@ public abstract class Order {
         this.state = OrderState.ISSUED;
     }
 
-    public Country getIssuer(boolean retreating) {
-        if (retreating) {
-            return who.dislodgedUnit != null ? who.dislodgedUnit.owner : null;
-        } else {
-            return who.unit != null ? who.unit.owner : null;
-        }
+    public Country getIssuer() {
+        return who.unit != null ? who.unit.owner : null;
     }
 
     @Override

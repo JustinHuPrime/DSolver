@@ -8,10 +8,13 @@ import ca.zootron.model.map.Province.ProvinceLocation;
 import ca.zootron.model.map.Province.SupplyCenter;
 import ca.zootron.model.map.Unit;
 import ca.zootron.model.order.BuildOrder;
+import ca.zootron.model.order.BuildPhaseOrder;
 import ca.zootron.model.order.DisbandOrder;
-import ca.zootron.model.order.MoveOrder;
 import ca.zootron.model.order.Order;
 import ca.zootron.model.order.Order.OrderState;
+import ca.zootron.model.order.RetreatDisbandOrder;
+import ca.zootron.model.order.RetreatMoveOrder;
+import ca.zootron.model.order.RetreatPhaseOrder;
 import ca.zootron.util.BadMapException;
 import ca.zootron.util.IllegalOrderListException;
 import ca.zootron.util.NoSuchMapException;
@@ -150,9 +153,9 @@ public final class Game {
     }
 
     private void resolveRetreatOrders(List<Order> orders) throws IllegalOrderListException {
-        // only move and disband orders are allowed
+        // only retreat phase orders are allowed
         orders.forEach(order -> {
-            if (!(order instanceof MoveOrder || order instanceof DisbandOrder)) {
+            if (!(order instanceof RetreatPhaseOrder)) {
                 throw new IllegalOrderListException(order, "only move and disband orders are allowed in retreats");
             }
         });
@@ -166,7 +169,7 @@ public final class Game {
 
         // only move orders that follow adjacencies are allowed
         orders.forEach(order -> {
-            if (order instanceof MoveOrder moveOrder) {
+            if (order instanceof RetreatMoveOrder moveOrder) {
                 assert order.who.dislodgedUnit != null;
                 if (!(order.who.adjacencies.get(order.who.dislodgedUnit.location).contains(moveOrder.destination))) {
                     throw new IllegalOrderListException(order, "only orders to move between adjacent provinces are allowed in retreats");
@@ -178,14 +181,14 @@ public final class Game {
         // disband orders always succeed
         // move orders succeed if no other order moves to the same province, otherwise they fail
         orders.forEach(order -> {
-            if (order instanceof DisbandOrder disbandOrder) {
+            if (order instanceof RetreatDisbandOrder disbandOrder) {
                 // always disband units ordered to disband
                 disbandOrder.who.dislodgedUnit = null;
                 disbandOrder.state = OrderState.SUCCEEDED;
             } else {
-                MoveOrder moveOrder = (MoveOrder) order;
+                RetreatMoveOrder moveOrder = (RetreatMoveOrder) order;
                 if (orders.stream().anyMatch(other -> {
-                    if (other instanceof MoveOrder otherMove) {
+                    if (other instanceof RetreatMoveOrder otherMove) {
                         return otherMove.destination.province() == moveOrder.destination.province();
                     } else {
                         return false;
@@ -207,9 +210,9 @@ public final class Game {
     }
 
     private void resolveBuildOrders(List<Order> orders) throws IllegalOrderListException {
-        // only build and disband orders are allowed
+        // only build phase orders are allowed
         orders.forEach(order -> {
-            if (!(order instanceof BuildOrder || order instanceof DisbandOrder)) {
+            if (!(order instanceof BuildPhaseOrder)) {
                 throw new IllegalOrderListException(order, "only build and disband orders are allowed in winter builds");
             }
         });
@@ -252,7 +255,7 @@ public final class Game {
                 // no build orders are allowed
                 orders.forEach(order -> {
                     if (order instanceof BuildOrder buildOrder) {
-                        if (buildOrder.getIssuer(false) == country) {
+                        if (buildOrder.getIssuer() == country) {
                             throw new IllegalOrderListException(buildOrder, "cannot issue build orders if required to disband in winter builds");
                         }
                     }
@@ -261,7 +264,7 @@ public final class Game {
                 // must be exactly -adjustmentsRemaining disband orders
                 if (orders.stream().filter(order -> {
                     if (order instanceof DisbandOrder disbandOrder) {
-                        return disbandOrder.getIssuer(false) == country;
+                        return disbandOrder.getIssuer() == country;
                     } else {
                         return false;
                     }
@@ -272,7 +275,7 @@ public final class Game {
                 // no disband orders are allowed
                 orders.forEach(order -> {
                     if (order instanceof DisbandOrder disbandOrder) {
-                        if (disbandOrder.getIssuer(false) == country) {
+                        if (disbandOrder.getIssuer() == country) {
                             throw new IllegalOrderListException(disbandOrder, "cannot issue disband orders if allowed to build in winter builds");
                         }
                     }
@@ -281,7 +284,7 @@ public final class Game {
                 // must be no more than adjustmentsRemaining build orders
                 if (orders.stream().filter(order -> {
                     if (order instanceof BuildOrder buildOrder) {
-                        return buildOrder.getIssuer(false) == country;
+                        return buildOrder.getIssuer() == country;
                     } else {
                         return false;
                     }
@@ -291,7 +294,7 @@ public final class Game {
             } else {
                 // no adjustments permitted either way
                 orders.forEach(order -> {
-                    if (order.getIssuer(false) == country) {
+                    if (order.getIssuer() == country) {
                         throw new IllegalOrderListException(order, "cannot issue any orders in build phase if no adjustments to be made in winter builds");
                     }
                 });
@@ -301,7 +304,7 @@ public final class Game {
         // orders are valid, and always succeed - perform adjustments
         orders.forEach(order -> {
             if (order instanceof BuildOrder buildOrder) {
-                Country issuer = buildOrder.getIssuer(false);
+                Country issuer = buildOrder.getIssuer();
                 assert issuer != null;
                 buildOrder.who.unit = new Unit(buildOrder.where, issuer);
             } else {

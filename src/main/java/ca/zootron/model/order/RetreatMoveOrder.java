@@ -4,12 +4,12 @@ import ca.zootron.model.map.Province;
 import ca.zootron.model.map.Province.Location;
 import org.jetbrains.annotations.NotNull;
 
-public final class MoveOrder extends MovePhaseOrder {
+public final class RetreatMoveOrder extends Order {
 
     @NotNull
     public final Province.ProvinceLocation destination;
 
-    public MoveOrder(@NotNull Province who, @NotNull Province.ProvinceLocation destination) {
+    public RetreatMoveOrder(@NotNull Province who, @NotNull Province.ProvinceLocation destination) {
         super(who);
         this.destination = destination;
     }

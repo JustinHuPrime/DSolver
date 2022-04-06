@@ -3,9 +3,9 @@ package ca.zootron.model.order;
 import ca.zootron.model.map.Province;
 import org.jetbrains.annotations.NotNull;
 
-public final class DisbandOrder extends BuildPhaseOrder {
+public final class RetreatDisbandOrder extends RetreatPhaseOrder {
 
-    public DisbandOrder(@NotNull Province who) {
+    public RetreatDisbandOrder(@NotNull Province who) {
         super(who);
     }
 

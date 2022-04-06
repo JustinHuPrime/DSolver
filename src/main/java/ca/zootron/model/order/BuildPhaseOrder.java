@@ -3,9 +3,9 @@ package ca.zootron.model.order;
 import ca.zootron.model.map.Province;
 import org.jetbrains.annotations.NotNull;
 
-public abstract class SupportableOrder extends Order {
+public abstract class BuildPhaseOrder extends Order {
 
-    public SupportableOrder(@NotNull Province who) {
+    public BuildPhaseOrder(@NotNull Province who) {
         super(who);
     }
 }
