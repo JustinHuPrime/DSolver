@@ -4,10 +4,14 @@ import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
 public final class Unit {
+
     @NotNull
     public final Country owner;
+    @NotNull
+    public Province.Location location;
 
-    public Unit(@NotNull Country owner) {
+    public Unit(@NotNull Province.Location location, @NotNull Country owner) {
+        this.location = location;
         this.owner = owner;
     }
 

@@ -4,11 +4,12 @@ import ca.zootron.model.Turn.Phase;
 import ca.zootron.model.map.Country;
 import ca.zootron.model.map.Province;
 import ca.zootron.model.map.Province.Location;
+import ca.zootron.model.map.Province.ProvinceLocation;
 import ca.zootron.model.map.Province.SupplyCenter;
 import ca.zootron.model.map.Unit;
+import ca.zootron.model.order.Order;
 import ca.zootron.util.BadMapException;
 import ca.zootron.util.NoSuchMapException;
-import ca.zootron.util.Pair;
 import com.google.gson.Gson;
 import com.google.gson.JsonParseException;
 import java.io.InputStream;
@@ -19,6 +20,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -35,6 +37,33 @@ public final class Game {
         this.countries = countries;
         this.board = provinces;
         this.turn = new Turn(1, Phase.SPRING_MOVE);
+    }
+
+    public void resolve(List<Order> orders) {
+        switch (turn.phase) {
+            case SPRING_MOVE, FALL_MOVE -> {
+                break;
+            }
+            case SPRING_RETREAT, FALL_RETREAT -> {
+                break;
+            }
+            case WINTER_BUILD -> {
+                break;
+            }
+        }
+    }
+
+    private int adjustmentsRemaining(Country country) {
+        AtomicInteger remaining = new AtomicInteger();
+        board.forEach(province -> {
+            if (province.supplyCenter != null && province.supplyCenter.controller == country) {
+                remaining.getAndIncrement();
+            }
+            if (province.unit != null && province.unit.owner == country) {
+                remaining.getAndDecrement();
+            }
+        });
+        return remaining.get();
     }
 
     @Override
@@ -79,7 +108,7 @@ public final class Game {
                               badFlag.set(true);
                               return null;
                           } else {
-                              return new Pair<>(new Unit(owner.get()), unit.location);
+                              return new Unit(unit.location, owner.get());
                           }
                         }).orElse(null),
                       parsed.supplyCenters.stream().filter(sc -> sc.province.equals(jsonProvince.name)).findFirst().map(sc -> {
@@ -127,7 +156,7 @@ public final class Game {
             // province adjacencies (requires provinces to all exist)
             parsed.adjacencies.forEach(adjacency -> provinces.stream().filter(p -> p.name.equals(adjacency.from)).findFirst().ifPresentOrElse(
                   p -> {
-                      List<Pair<Province, Location>> adjacencyList = p.adjacencies.get(adjacency.fromLocation);
+                      List<ProvinceLocation> adjacencyList = p.adjacencies.get(adjacency.fromLocation);
                       if (adjacencyList == null) {
                           badFlag.set(true);
                           return;
@@ -135,14 +164,14 @@ public final class Game {
 
                       provinces.stream().filter(q -> q.name.equals(adjacency.to)).findFirst().ifPresentOrElse(
                             q -> {
-                                List<Pair<Province, Location>> destAdjacencyList = q.adjacencies.get(adjacency.toLocation);
+                                List<ProvinceLocation> destAdjacencyList = q.adjacencies.get(adjacency.toLocation);
                                 if (destAdjacencyList == null) {
                                     badFlag.set(true);
                                     return;
                                 }
 
-                                adjacencyList.add(new Pair<>(q, adjacency.toLocation));
-                                destAdjacencyList.add(new Pair<>(p, adjacency.fromLocation));
+                                adjacencyList.add(new ProvinceLocation(q, adjacency.toLocation));
+                                destAdjacencyList.add(new ProvinceLocation(p, adjacency.fromLocation));
                             },
                             () -> badFlag.set(true)
                       );

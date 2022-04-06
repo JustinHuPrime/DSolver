@@ -7,9 +7,12 @@ import org.jetbrains.annotations.NotNull;
 public abstract class Order {
     @NotNull
     public Province who;
+    @NotNull
+    public OrderState state;
 
     public Order(@NotNull Province who) {
         this.who = who;
+        this.state = OrderState.ISSUED;
     }
 
     @Override
@@ -27,5 +30,11 @@ public abstract class Order {
     @Override
     public int hashCode() {
         return Objects.hash(who);
+    }
+
+    public enum OrderState {
+        ISSUED,
+        FAILED,
+        SUCCEEDED
     }
 }

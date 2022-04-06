@@ -1,6 +1,5 @@
 package ca.zootron.model.map;
 
-import ca.zootron.util.Pair;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -11,13 +10,13 @@ public final class Province {
     @NotNull
     public final String name;
     @NotNull
-    public final Map<@NotNull Location, @NotNull List<@NotNull Pair<@NotNull Province, @NotNull Location>>> adjacencies;
+    public final Map<@NotNull Location, @NotNull List<@NotNull ProvinceLocation>> adjacencies;
     @Nullable
-    public Pair<@NotNull Unit, @NotNull Location> unit;
+    public Unit unit;
     @Nullable
     public final SupplyCenter supplyCenter;
 
-    public Province(@NotNull String name, @NotNull Map<@NotNull Location, List<@NotNull Pair<@NotNull Province, @NotNull Location>>> adjacencies, @Nullable Pair<@NotNull Unit, @NotNull Location> unit, @Nullable SupplyCenter supplyCenter) {
+    public Province(@NotNull String name, @NotNull Map<@NotNull Location, List<@NotNull ProvinceLocation>> adjacencies, @Nullable Unit unit, @Nullable SupplyCenter supplyCenter) {
         this.name = name;
         this.adjacencies = adjacencies;
         this.unit = unit;
@@ -55,5 +54,9 @@ public final class Province {
         THE_COAST,
         NORTH_COAST,
         SOUTH_COAST
+    }
+
+    public static record ProvinceLocation(@NotNull Province province, @NotNull Location location) {
+
     }
 }
