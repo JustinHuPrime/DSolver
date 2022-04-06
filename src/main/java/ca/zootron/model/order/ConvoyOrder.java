@@ -19,26 +19,6 @@ public final class ConvoyOrder extends SupportableOrder {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-        if (!super.equals(o)) {
-            return false;
-        }
-        ConvoyOrder that = (ConvoyOrder) o;
-        return from.equals(that.from) && to.equals(that.to);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), from, to);
-    }
-
-    @Override
     public String toString() {
         return who + " convoys " + from + " - " + to;
     }

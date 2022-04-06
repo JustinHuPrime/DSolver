@@ -17,23 +17,6 @@ public final class Unit {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-        Unit unit = (Unit) o;
-        return owner.equals(unit.owner);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(owner);
-    }
-
-    @Override
     public String toString() {
         return (location == Location.LAND ? "Army" : "Fleet") + " owned by " + owner;
     }

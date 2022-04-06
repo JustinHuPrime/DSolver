@@ -15,26 +15,6 @@ public final class SupportOrder extends SupportableOrder {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-        if (!super.equals(o)) {
-            return false;
-        }
-        SupportOrder that = (SupportOrder) o;
-        return Objects.equals(order, that.order);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), order);
-    }
-
-    @Override
     public String toString() {
         if (order instanceof MoveOrder moveOrder) {
             return who + " supports " + moveOrder.who + " - " + moveOrder.destinationProvince;

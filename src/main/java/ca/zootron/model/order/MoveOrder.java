@@ -18,26 +18,6 @@ public final class MoveOrder extends SupportableOrder {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
-            return false;
-        }
-        if (!super.equals(o)) {
-            return false;
-        }
-        MoveOrder moveOrder = (MoveOrder) o;
-        return destinationProvince.equals(moveOrder.destinationProvince) && destinationLocation == moveOrder.destinationLocation;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), destinationProvince, destinationLocation);
-    }
-
-    @Override
     public String toString() {
         if (destinationLocation == Location.NORTH_COAST || destinationLocation == Location.SOUTH_COAST) {
             return who + " - " + destinationProvince + " (" + destinationLocation + ")";
