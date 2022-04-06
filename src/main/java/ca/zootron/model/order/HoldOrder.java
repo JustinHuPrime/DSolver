@@ -10,16 +10,6 @@ public final class HoldOrder extends SupportableOrder {
     }
 
     @Override
-    public boolean equals(Object o) {
-        return super.equals(o);
-    }
-
-    @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
     public String toString() {
         return who + " holds";
     }

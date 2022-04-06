@@ -6,7 +6,8 @@ import ca.zootron.util.NoSuchMapException;
 
 public final class Main {
 
-    private Main() {}
+    private Main() {
+    }
 
     public static void main(String[] args) {
         try {

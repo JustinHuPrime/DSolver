@@ -1,7 +1,6 @@
 package ca.zootron.model.map;
 
 import ca.zootron.model.map.Province.Location;
-import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
 public final class Unit {

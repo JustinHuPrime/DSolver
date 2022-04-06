@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 public final class BuildOrder extends Order {
 
     @NotNull
-    public Location where;
+    public final Location where;
 
     public BuildOrder(@NotNull Province who, @NotNull Location where) {
         super(who);
@@ -16,7 +16,7 @@ public final class BuildOrder extends Order {
     }
 
     @Override
-    public Country getIssuer() {
+    public Country getIssuer(boolean retreating) {
         return who.supplyCenter != null ? who.supplyCenter.controller : null;
     }
 

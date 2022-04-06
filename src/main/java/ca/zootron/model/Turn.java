@@ -4,6 +4,7 @@ import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
 public final class Turn {
+
     public int turn;
     @NotNull
     public Phase phase;
@@ -13,11 +14,12 @@ public final class Turn {
         this.phase = phase;
     }
 
-    public @NotNull Turn next() {
+    public void next() {
         if (this.phase == Phase.WINTER_BUILD) {
-            return new Turn(this.turn + 1, Phase.SPRING_MOVE);
+            turn++;
+            phase = Phase.SPRING_MOVE;
         } else {
-            return new Turn(this.turn, Phase.values()[this.phase.ordinal() + 1]);
+            phase = Phase.values()[this.phase.ordinal() + 1];
         }
     }
 

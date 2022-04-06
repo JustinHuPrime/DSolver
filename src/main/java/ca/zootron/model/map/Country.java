@@ -4,6 +4,7 @@ import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
 public final class Country {
+
     @NotNull
     public final String name;
 

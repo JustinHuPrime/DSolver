@@ -1,16 +1,14 @@
 package ca.zootron.model.order;
 
-import ca.zootron.model.map.Country;
 import ca.zootron.model.map.Province;
-import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
 public final class ConvoyOrder extends SupportableOrder {
 
     @NotNull
-    public Province from;
+    public final Province from;
     @NotNull
-    public Province to;
+    public final Province to;
 
     public ConvoyOrder(@NotNull Province who, @NotNull Province from, @NotNull Province to) {
         super(who);

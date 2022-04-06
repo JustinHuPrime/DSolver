@@ -4,6 +4,7 @@ import ca.zootron.model.order.Order;
 import org.jetbrains.annotations.Nullable;
 
 public class IllegalOrderListException extends RuntimeException {
+
     @Nullable
     public final Order violator;
 
