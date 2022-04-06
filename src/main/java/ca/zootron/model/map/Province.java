@@ -17,7 +17,7 @@ public final class Province {
     @Nullable
     public Unit unit;
     @Nullable
-    public Unit dislodgedUnit;
+    public DislodgedUnit dislodgedUnit;
 
     public Province(@NotNull String name, @NotNull Map<@NotNull Location, Set<@NotNull ProvinceLocation>> adjacencies, @Nullable Unit unit, @Nullable SupplyCenter supplyCenter) {
         this.name = name;
@@ -25,6 +25,11 @@ public final class Province {
         this.unit = unit;
         this.dislodgedUnit = null;
         this.supplyCenter = supplyCenter;
+    }
+
+    public boolean isCoastal() {
+        Set<Location> keySet = adjacencies.keySet();
+        return keySet.contains(Location.LAND) && keySet.size() > 1;
     }
 
     @Override
@@ -89,5 +94,8 @@ public final class Province {
         public int hashCode() {
             return Objects.hash(province, location);
         }
+    }
+
+    public static record DislodgedUnit(@NotNull Unit unit, @NotNull Province attackSource) {
     }
 }

@@ -1,6 +1,8 @@
 package ca.zootron.model.order;
 
 import ca.zootron.model.map.Province;
+import ca.zootron.model.map.Province.Location;
+import ca.zootron.util.IllegalOrderException;
 import org.jetbrains.annotations.NotNull;
 
 public final class ConvoyOrder extends MovePhaseOrder {
@@ -10,10 +12,27 @@ public final class ConvoyOrder extends MovePhaseOrder {
     @NotNull
     public final Province to;
 
+    /**
+     * Convoy an army between two provinces
+     *
+     * Source province must contain a unit on land
+     * Both source and destination must be distinct
+     * Both source and destination provinces must contain both a land and non-land adjacency
+     */
     public ConvoyOrder(@NotNull Province who, @NotNull Province from, @NotNull Province to) {
         super(who);
         this.from = from;
         this.to = to;
+
+        if (!(from.unit != null && from.unit.location == Location.LAND)) {
+            throw new IllegalOrderException("can't issue a convoy order without a unit on land waiting to be convoyed");
+        } else if (from == to) {
+            throw new IllegalOrderException("can't issue a convoy order to and from the same province");
+        } else if (!from.isCoastal()) {
+            throw new IllegalOrderException("can't issue a convoy order unless convoying from a coastal province");
+        } else if (!to.isCoastal()) {
+            throw new IllegalOrderException("can't issue a convoy order unless convoying to a coastal province");
+        }
     }
 
     @Override

@@ -23,6 +23,6 @@ public abstract class RetreatPhaseOrder extends Order {
 
     @Override
     public Country getIssuer() {
-        return who.dislodgedUnit != null ? who.dislodgedUnit.owner : null;
+        return who.dislodgedUnit != null ? who.dislodgedUnit.unit().owner : null;
     }
 }

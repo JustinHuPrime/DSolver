@@ -10,6 +10,7 @@ import ca.zootron.model.map.Unit;
 import ca.zootron.model.order.BuildOrder;
 import ca.zootron.model.order.BuildPhaseOrder;
 import ca.zootron.model.order.DisbandOrder;
+import ca.zootron.model.order.MovePhaseOrder;
 import ca.zootron.model.order.Order;
 import ca.zootron.model.order.Order.OrderState;
 import ca.zootron.model.order.RetreatDisbandOrder;
@@ -149,6 +150,13 @@ public final class Game {
     }
 
     private void resolveMoveOrders(List<Order> orders) throws IllegalOrderListException {
+        // only move phase orders are allowed
+        orders.forEach(order -> {
+            if (!(order instanceof MovePhaseOrder)) {
+                throw new IllegalOrderListException(order, "only convoy, hold, move, and support orders are allowed in moves");
+            }
+        });
+
         // TODO
     }
 
@@ -182,8 +190,8 @@ public final class Game {
                     moveOrder.state = OrderState.FAILED;
                 } else {
                     // dislodged unit didn't bounce
-                    Unit moved = moveOrder.who.dislodgedUnit;
-                    assert moved != null;
+                    assert moveOrder.who.dislodgedUnit != null;
+                    Unit moved = moveOrder.who.dislodgedUnit.unit();
                     moveOrder.who.dislodgedUnit = null;
                     moveOrder.destination.province().unit = moved;
                     moved.location = moveOrder.destination.location();
