@@ -1,12 +1,12 @@
 {
   "countries": [
-      "Austria",
-      "England",
-      "France",
-      "Germany",
-      "Italy",
-      "Russia",
-      "Turkey"
+    "Austria",
+    "England",
+    "France",
+    "Germany",
+    "Italy",
+    "Russia",
+    "Turkey"
   ],
   "provinces": [
     {

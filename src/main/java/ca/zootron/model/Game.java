@@ -86,6 +86,26 @@ public class Game {
                 throw new BadMapException("couldn't parse map " + name);
             }
 
+            // check: all units must be on the map
+            parsed.units.forEach(unit -> {
+                if (provinces.stream().filter(province -> province.name.equals(unit.province)).findAny().isEmpty()) {
+                    badFlag.set(true);
+                }
+            });
+            if (badFlag.get()) {
+                throw new BadMapException("couldn't parse map " + name);
+            }
+
+            // check: all supply centers must be on the map
+            parsed.supplyCenters.forEach(supplyCenter -> {
+                if (provinces.stream().filter(province -> province.name.equals(supplyCenter.province)).findAny().isEmpty()) {
+                    badFlag.set(true);
+                }
+            });
+            if (badFlag.get()) {
+                throw new BadMapException("couldn't parse map " + name);
+            }
+
             // province adjacencies (requires provinces to all exist)
             parsed.adjacencies.forEach(adjacency -> provinces.stream().filter(p -> p.name.equals(adjacency.from)).findFirst().ifPresentOrElse(
                   p -> {
