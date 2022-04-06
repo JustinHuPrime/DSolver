@@ -13,7 +13,10 @@ public final class MoveOrder extends MovePhaseOrder {
     /**
      * Move a unit between two provinces
      *
-     * Must be possible by adjacencies (implicitly forbids moves to the same place)
+     * <ul>
+     *     <li>Must be possible by adjacencies (implicitly forbids moves to the same place) or</li>
+     *     <li>Or may be from coastal province to coastal province (convoy)</li>
+     * </ul>
      */
     public MoveOrder(@NotNull Province who, @NotNull Province.ProvinceLocation destination) {
         super(who);

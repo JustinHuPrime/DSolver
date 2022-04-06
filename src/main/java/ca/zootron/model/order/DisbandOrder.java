@@ -9,7 +9,9 @@ public final class DisbandOrder extends BuildPhaseOrder {
     /**
      * Disband a unit from some province
      *
-     * Province must contain a unit
+     * <ul>
+     *     <li>Province must contain a unit</li>
+     * </ul>
      */
     public DisbandOrder(@NotNull Province who) {
         super(who);

@@ -12,8 +12,10 @@ public final class SupportOrder extends MovePhaseOrder {
     /**
      * Support an order
      *
-     * If supporting a move: destination province must be ordinarily reachable
-     * Otherwise: target unit's province must be ordinarily reachable
+     * <ul>
+     *     <li>If supporting a move: destination province must be ordinarily reachable</li>
+     *     <li>Otherwise: target unit's province must be ordinarily reachable</li>
+     * </ul>
      */
     public SupportOrder(@NotNull Province who, @NotNull MovePhaseOrder order) {
         super(who);

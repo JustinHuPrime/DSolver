@@ -15,9 +15,11 @@ public final class ConvoyOrder extends MovePhaseOrder {
     /**
      * Convoy an army between two provinces
      *
-     * Source province must contain a unit on land
-     * Both source and destination must be distinct
-     * Both source and destination provinces must contain both a land and non-land adjacency
+     * <ul>
+     *     <li>Source province must contain a unit on land</li>
+     *     <li>Both source and destination must be distinct</li>
+     *     <li>Both source and destination provinces must be coastal</li>
+     * </ul>
      */
     public ConvoyOrder(@NotNull Province who, @NotNull Province from, @NotNull Province to) {
         super(who);

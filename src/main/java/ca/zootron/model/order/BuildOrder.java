@@ -14,8 +14,10 @@ public final class BuildOrder extends BuildPhaseOrder {
     /**
      * Build a unit in a supply center at some location
      *
-     * SC must be owned but not occupied by a unit
-     * Location must be a valid location for the province
+     * <ul>
+     *     <li>SC must be owned but not occupied by a unit</li>
+     *     <li>Location must be a valid location for the province</li>
+     * </ul>
      */
     public BuildOrder(@NotNull Province who, @NotNull Location where) {
         super(who);

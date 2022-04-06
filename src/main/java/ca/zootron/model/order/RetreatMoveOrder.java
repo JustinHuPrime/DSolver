@@ -11,11 +11,13 @@ public final class RetreatMoveOrder extends Order {
     public final Province.ProvinceLocation destination;
 
     /**
-     * Retreat a disloged unit from a province
+     * Retreat a dislodged unit from a province
      *
-     * Destination must be reachable from current location
-     * Destination must not contain an existing unit
-     * Destination must not be source of attack
+     * <ul>
+     *     <li>Destination must be reachable from current location (implicitly forbids retreats to same province)</li>
+     *     <li>Destination must not contain an existing unit</li>
+     *     <li>Destination must not be source of attack</li>
+     * </ul>
      */
     public RetreatMoveOrder(@NotNull Province who, @NotNull Province.ProvinceLocation destination) {
         super(who);

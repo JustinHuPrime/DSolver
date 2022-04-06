@@ -8,7 +8,9 @@ public final class HoldOrder extends MovePhaseOrder {
     /**
      * Unit stays in place
      *
-     * No specific validity requirements
+     * <ul>
+     *     <li>No specific validity requirements</li>
+     * </ul>
      */
     public HoldOrder(@NotNull Province who) {
         super(who);

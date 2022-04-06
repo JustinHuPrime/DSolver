@@ -8,7 +8,9 @@ public abstract class BuildPhaseOrder extends Order {
     /**
      * Generalized build phase order
      *
-     * No general restrictions
+     * <ul>
+     *     <li>No general restrictions</li>
+     * </ul>
      */
     public BuildPhaseOrder(@NotNull Province who) {
         super(who);

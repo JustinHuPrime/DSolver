@@ -11,7 +11,9 @@ public abstract class RetreatPhaseOrder extends Order {
     /**
      * Generalized retreat phase order to some province
      *
-     * Province must contain a disloged unit
+     * <ul>
+     *     <li>Province must contain a dislodged unit</li>
+     * </ul>
      */
     public RetreatPhaseOrder(@NotNull Province who) {
         super(who);

@@ -9,7 +9,9 @@ public abstract class MovePhaseOrder extends Order {
     /**
      * Generalized move phase order to some province
      *
-     * Province must contain a unit
+     * <ul>
+     *     <li>Province must contain a unit</li>
+     * </ul>
      */
     public MovePhaseOrder(@NotNull Province who) {
         super(who);
