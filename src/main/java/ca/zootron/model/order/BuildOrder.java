@@ -3,6 +3,7 @@ package ca.zootron.model.order;
 import ca.zootron.model.map.Country;
 import ca.zootron.model.map.Province;
 import ca.zootron.model.map.Province.Location;
+import ca.zootron.util.IllegalOrderException;
 import org.jetbrains.annotations.NotNull;
 
 public final class BuildOrder extends BuildPhaseOrder {
@@ -10,9 +11,23 @@ public final class BuildOrder extends BuildPhaseOrder {
     @NotNull
     public final Location where;
 
+    /**
+     * Build a unit in a supply center at some location
+     *
+     * SC must be owned but not occupied by a unit
+     * Location must be a valid location for the province
+     */
     public BuildOrder(@NotNull Province who, @NotNull Location where) {
         super(who);
         this.where = where;
+
+        if (who.supplyCenter == null) {
+            throw new IllegalOrderException("can't issue a build order to a province without a supply center");
+        } else if (who.unit != null) {
+            throw new IllegalOrderException("can't issue a build order to an occupied supply center");
+        } else if (!who.adjacencies.containsKey(where)) {
+            throw new IllegalOrderException("can't issue a build order with an invalid location for the province");
+        }
     }
 
     @Override

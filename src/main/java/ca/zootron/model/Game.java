@@ -160,23 +160,6 @@ public final class Game {
             }
         });
 
-        // only orders to dislodged units are allowed
-        orders.forEach(order -> {
-            if (order.who.dislodgedUnit == null) {
-                throw new IllegalOrderListException(order, "only orders to dislodged units are allowed in retreats");
-            }
-        });
-
-        // only move orders that follow adjacencies are allowed
-        orders.forEach(order -> {
-            if (order instanceof RetreatMoveOrder moveOrder) {
-                assert order.who.dislodgedUnit != null;
-                if (!(order.who.adjacencies.get(order.who.dislodgedUnit.location).contains(moveOrder.destination))) {
-                    throw new IllegalOrderListException(order, "only orders to move between adjacent provinces are allowed in retreats");
-                }
-            }
-        });
-
         // orders are valid - resolve them
         // disband orders always succeed
         // move orders succeed if no other order moves to the same province, otherwise they fail
@@ -217,15 +200,6 @@ public final class Game {
             }
         });
 
-        // only build orders to controlled but empty SCs are allowed
-        orders.forEach(order -> {
-            if (order instanceof BuildOrder buildOrder) {
-                if (!(buildOrder.who.supplyCenter != null && buildOrder.who.unit == null)) {
-                    throw new IllegalOrderListException(buildOrder, "only build orders to controlled but empty supply centers are allowed in winter builds");
-                }
-            }
-        });
-
         if (onlyHomeSCBuilds) {
             // special rule: if map is home SC builds only, only build orders in home SCs are allowed
             orders.forEach(order -> {
@@ -237,15 +211,6 @@ public final class Game {
                 }
             });
         }
-
-        // only disband orders to units are allowed
-        orders.forEach(order -> {
-            if (order instanceof DisbandOrder disbandOrder) {
-                if (disbandOrder.who.unit == null) {
-                    throw new IllegalOrderListException(disbandOrder, "only disband orders to units are allowed in winter builds");
-                }
-            }
-        });
 
         // for each country
         countries.forEach(country -> {
