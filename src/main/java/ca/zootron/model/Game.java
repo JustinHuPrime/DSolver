@@ -169,15 +169,10 @@ public final class Game {
         });
 
         // orders are valid - resolve them
-        // disband orders always succeed
+
         // move orders succeed if no other order moves to the same province, otherwise they fail
         orders.forEach(order -> {
-            if (order instanceof RetreatDisbandOrder disbandOrder) {
-                // always disband units ordered to disband
-                disbandOrder.who.dislodgedUnit = null;
-                disbandOrder.state = OrderState.SUCCEEDED;
-            } else {
-                RetreatMoveOrder moveOrder = (RetreatMoveOrder) order;
+            if (order instanceof RetreatMoveOrder moveOrder) {
                 if (orders.stream().anyMatch(other -> {
                     if (other instanceof RetreatMoveOrder otherMove) {
                         return otherMove.destination.province() == moveOrder.destination.province();
@@ -185,7 +180,7 @@ public final class Game {
                         return false;
                     }
                 })) {
-                    // dislodged unit bounced - dislodge it
+                    // dislodged unit bounced - disband it
                     moveOrder.who.dislodgedUnit = null;
                     moveOrder.state = OrderState.FAILED;
                 } else {
@@ -198,6 +193,9 @@ public final class Game {
                 }
             }
         });
+
+        // remaining dislodged units are implicitly or explicitly disbanded
+        board.forEach(province -> province.dislodgedUnit = null);
     }
 
     private void resolveBuildOrders(List<Order> orders) throws IllegalOrderListException {
