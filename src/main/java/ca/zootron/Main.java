@@ -4,7 +4,9 @@ import ca.zootron.model.Game;
 import ca.zootron.util.BadMapException;
 import ca.zootron.util.NoSuchMapException;
 
-public abstract class Main {
+public final class Main {
+
+    private Main() {}
 
     public static void main(String[] args) {
         try {

@@ -16,12 +16,13 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.concurrent.atomic.AtomicBoolean;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class Game {
+public final class Game {
 
     @NotNull
     public final List<@NotNull Country> countries;
@@ -34,6 +35,23 @@ public class Game {
         this.countries = countries;
         this.board = provinces;
         this.turn = new Turn(1, Phase.SPRING_MOVE);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Game game = (Game) o;
+        return countries.equals(game.countries) && board.equals(game.board) && turn.equals(game.turn);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(countries, board, turn);
     }
 
     public static Game fromMap(@NotNull String name) throws NoSuchMapException, BadMapException {

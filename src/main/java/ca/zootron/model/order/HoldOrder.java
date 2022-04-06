@@ -3,7 +3,7 @@ package ca.zootron.model.order;
 import ca.zootron.model.map.Province;
 import org.jetbrains.annotations.NotNull;
 
-public class HoldOrder extends Order {
+public final class HoldOrder extends Order {
 
     public HoldOrder(@NotNull Province who) {
         super(who);

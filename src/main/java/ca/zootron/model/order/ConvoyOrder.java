@@ -4,7 +4,7 @@ import ca.zootron.model.map.Province;
 import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
-public class ConvoyOrder extends Order {
+public final class ConvoyOrder extends Order {
     @NotNull
     public Province from;
     @NotNull

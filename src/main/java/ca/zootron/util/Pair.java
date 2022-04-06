@@ -2,7 +2,7 @@ package ca.zootron.util;
 
 import java.util.Objects;
 
-public class Pair<A, B> {
+public final class Pair<A, B> {
     public A a;
     public B b;
 

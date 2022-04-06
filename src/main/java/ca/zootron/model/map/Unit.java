@@ -3,7 +3,7 @@ package ca.zootron.model.map;
 import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
-public class Unit {
+public final class Unit {
     @NotNull
     public final Country owner;
 

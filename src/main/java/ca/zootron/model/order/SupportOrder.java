@@ -5,7 +5,7 @@ import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class SupportOrder extends Order {
+public final class SupportOrder extends Order {
     @Nullable
     public Order order;
 

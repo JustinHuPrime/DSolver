@@ -7,7 +7,7 @@ import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class Province {
+public final class Province {
     @NotNull
     public final String name;
     @NotNull

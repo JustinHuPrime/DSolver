@@ -6,7 +6,7 @@ import ca.zootron.util.Pair;
 import java.util.Objects;
 import org.jetbrains.annotations.NotNull;
 
-public class MoveOrder extends Order {
+public final class MoveOrder extends Order {
     @NotNull
     public Pair<@NotNull Province, @NotNull Location> destination;
 
